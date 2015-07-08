@@ -1,0 +1,63 @@
+﻿<Page
+    x:Class="StarterApplicationWin8.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:StarterApplicationWin8"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#FFF6F9F9">
+
+        <ListBox Background="#FFE8EAEE" x:Name="FeedListBox" HorizontalAlignment="Left" Height="799" Margin="0,56,0,-87" VerticalAlignment="Top" Width="502" SelectionChanged="ItemFeedClicked"/>
+        <WebView x:Name="WebViewConsole" HorizontalAlignment="Left" Height="799" Margin="507,56,-172,-87" VerticalAlignment="Top" Width="1031"/>
+        <TextBlock x:Name="TitleBar" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="                  STARTER APPLICATION" VerticalAlignment="Top" Height="41" Width="1346" Foreground="#FF2E8ADE" FontFamily="Segoe WP SemiLight" FontSize="30" TextAlignment="Center"/>
+        <TextBlock Visibility="Collapsed" x:Name="AboutBlock" HorizontalAlignment="Left" Height="525" Margin="456,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="812" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsRightTapEnabled="False" IsTapEnabled="False" FontSize="20" Foreground="Black" >
+        	<Run Text="                About IBM MobileFirst Platform Foundation"/>
+        	<LineBreak/>
+        	<Run/>
+        	<LineBreak/>
+        	<Run/>
+        	<LineBreak/>
+        	<Run Text="COPYRIGHT LICENSE: This information contains sample code provided "/>
+        	<LineBreak/>
+        	<Run Text="in source code form. You may copy, modify, and distribute these sample"/>
+        	<LineBreak/>
+        	<Run Text="programs in any form without payment to IBM® for the purposes of"/>
+        	<LineBreak/>
+        	<Run Text="developing, using, marketing or distributing application programs"/>
+        	<LineBreak/>
+        	<Run Text="conforming to the application programming interface for the operating"/>
+        	<LineBreak/>
+        	<Run Text="platform for which the sample code is written. Notwithstanding anything "/>
+        	<LineBreak/>
+        	<Run Text="to the contrary, IBM PROVIDES THE SAMPLE SOURCE CODE ON "/>
+        	<LineBreak/>
+        	<Run Text="AN &quot;AS IS&quot; BASIS AND IBM DISCLAIMS ALL WARRANTIES, EXPRESS OR "/>
+        	<LineBreak/>
+        	<Run Text="IMPLIED, INCLUDING, BUT NOT LIMITED TO, ANY IMPLIED WARRANTIES OR OF "/>
+        	<LineBreak/>
+        	<Run Text="MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A PARTICULAR"/>
+        	<LineBreak/>
+        	<Run Text="PURPOSE, TITLE, AND ANY WARRANTY OR CONDITION OF NON-INFRINGEMENT."/>
+        	<LineBreak/>
+        	<Run Text="IBM SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL "/>
+        	<LineBreak/>
+        	<Run Text="OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR OPERATION OF "/>
+        	<LineBreak/>
+        	<Run Text="THE SAMPLE SOURCE CODE. IBM HAS NO OBLIGATION TO PROVIDE MAINTENANCE,"/>
+        	<LineBreak/>
+        	<Run Text="SUPPORT, UPDATES, ENHANCEMENTS OR MODIFICATIONS TO THE SAMPLE SOURCE"/>
+        	<LineBreak/>
+        	<Run Text="CODE."/>
+        </TextBlock>
+        <TextBlock x:Name="AboutTab" HorizontalAlignment="Left" Margin="1434,10,-172,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="41" Width="104" Foreground="#FF5EACF1" FontFamily="Segoe WP SemiLight" TextAlignment="Center" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsRightTapEnabled="False" Tapped="AboutTab_Tapped">
+        	<Run FontSize="24" Text="About"/>
+        </TextBlock>
+        <TextBlock x:Name="FeedsTab" HorizontalAlignment="Left" Margin="0,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="41" Width="104" Foreground="#FF66ADEC" FontFamily="Segoe WP SemiLight"  TextAlignment="Center" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsRightTapEnabled="False" Tapped="FeedsTab_Tapped">
+        	<Run FontSize="24" Text="Feeds"/>
+        </TextBlock>
+
+    </Grid>
+
+</Page>
