@@ -85,10 +85,13 @@ namespace StarterApplicationWin8
                 {
                     MainPage._this.FeedListBox.Items.Clear();
                 });
-            WLProcedureInvocationData proceduerParams = new WLProcedureInvocationData("StarterApplicationAdapter", "getEngadgetFeeds");
-            WLRequestOptions options = new WLRequestOptions();
-            WLResponseListener listener = new InvokeProcedureListener(null);
-            MainPage._this.wlClient.invokeProcedure(proceduerParams, listener, options);
+            
+           WLResourceRequest adapter = new WLResourceRequest("/adapters/StarterApplicationAdapter/getEngadgetFeeds", "GET");
+
+           Object[] parameters = { 0 };
+           InvokeProcedureListener listener = new InvokeProcedureListener(_this);
+           adapter.send(listener);
+            
         }
 
         public class InvokeProcedureListener : WLResponseListener
